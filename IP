@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary please? - Set Up Your Itinerary with Coco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+        }
+        header {
+            background-image: url('https://example.com/sky-flowers-airplanes.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-family: 'Cursive', sans-serif;
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .bio, .booking, .contact-form, .payment-form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group button, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Set Up Your Itinerary with Coco</h1>
+</header>
+
+<div class="content">
+    <!-- Bio Section -->
+    <section class="section bio">
+        <h2>Welcome to Itinerary please?</h2>
+        <p>Hi, I am Rotosha Word, the Founder and Travel Advisor of Itinerary please? My mission is to help your vacation become smooth sailing. I am a first-generation college graduate from Alabama who enjoys excursions and restaurants, even if it's just 20 miles from my residence. Feel free to book itineraries for vacations, anniversaries, birthdays, and more. Let's make every journey a memorable one!</p>
+    </section>
+
+    <!-- Itinerary Booking Section -->
+    <section class="section booking">
+        <h2>Book Your Itinerary</h2>
+        <form id="booking-form">
+            <label for="trip-duration">Select Trip Duration:</label>
+            <select id="trip-duration" name="trip-duration" required>
+                <option value="4-7">4-7 days ($30)</option>
+                <option value="8-15">8-15 days ($50)</option>
+            </select>
+
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="apple-pay">Apple Pay</option>
+                </select>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-form">
+        <h2>Contact Coco</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Payment Form Section -->
+    <section class="section payment-form">
+        <h2>Complete Payment</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
